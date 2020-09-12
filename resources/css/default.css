@@ -1,0 +1,71 @@
+:root {
+    --blue: #2091F9;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Buttons */
+
+.round-control {
+    border-radius: 35px;
+
+    padding-left: 1.85em;
+    padding-right: 1.85em;
+}
+
+.btn {
+    font-size: 1.2em;
+    letter-spacing: 0.2px;
+}
+
+.btn-light {
+    color: var(--blue);
+}
+.btn-primary {
+    background-color: var(--blue);
+}
+
+/* /Buttons */
+
+/* Forms */
+
+.form-control {
+    font-size: 0.9em;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+}
+.form-control, .form-control::placeholder {
+    color: #18171D;
+    letter-spacing: 0.1px;
+}
+
+/* /Forms */
+
+
+
+/* Media queries */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* /Media queries */
