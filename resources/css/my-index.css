@@ -1,0 +1,65 @@
+/* Pricings */
+
+.plan {
+    background-color: white;
+    color: var(--black);
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 2.2em;
+
+    transition: background-color 1.2s;
+}
+
+.plan .btn {
+    transition: background-color 0.8s, color 0.8s;
+}
+
+.plan:hover {
+    background-color: var(--blue);
+}
+.plan:hover, .plan:hover .plan__description, .plan:hover .price-block__period {
+    color: white;
+}
+
+.plan__name {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.plan__description {
+    font-size: 0.9em;
+    color: var(--gray-dark);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.plan__feature {
+    font-size: 0.85em;
+    margin-bottom: 1.5em;
+}
+
+.price-block p {
+    margin-bottom: 0;
+}
+
+.price-block__number {
+    font-size: 4.1em;
+    font-weight: bold;
+}
+
+.price-block__dollar {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.price-block__period {
+    font-size: 0.9em;
+    color: var(--gray-dark);
+}
+
+/* /Pricings */

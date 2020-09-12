@@ -1,10 +1,19 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('../fonts/graphik.ttf') format('truetype');
+}
+
 :root {
     --blue: #2091F9;
+    --black: #252B42;
+    --gray-dark: #374754;;
 }
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Graphik', sans-serif;
+    background-color: var(--black);
+    color: white;
 }
 
 
@@ -14,19 +23,21 @@ body {
 .round-control {
     border-radius: 35px;
 
-    padding-left: 1.85em;
-    padding-right: 1.85em;
+    padding-left: 2.35em;
+    padding-right: 2.35em;
 }
 
 .btn {
-    font-size: 1.2em;
+    font-size: 1.1em;
     letter-spacing: 0.2px;
 }
 
 .btn-light {
     color: var(--blue);
+    background-color: white;
 }
 .btn-primary {
+    color: white;
     background-color: var(--blue);
 }
 
@@ -47,24 +58,39 @@ body {
 /* /Forms */
 
 
+/* Main */
+
+.line__description {
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+/* /Main */
+
+
 
 /* Media queries */
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     html {
-        font-size: 14px;
+        font-size: 15px !important;
+    }
+
+    .plan {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     html {
-        font-size: 16px;
+        font-size: 17px !important;
     }
 }
 
 @media only screen and (min-width: 1224px) {
     html {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 }
 

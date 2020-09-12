@@ -21,13 +21,13 @@
     <title>Business Landing page</title>
 </head>
 
-<body class="">
+<body>
 
-    <div class="header bg-dark pt-3 pb-3">
+    <div class="header">
         <div class="container">
 
 
-            <button class="btn btn-light round-control">Try for free</button>
+            <!-- <button class="btn btn-light round-control">Try for free</button>
             <button class="btn btn-primary round-control font-weight-bold">Try for free</button>
 
             <form action="">
@@ -46,14 +46,32 @@
                     </div>
 
                 </div>
-            </form>
+            </form> -->
 
 
 
         </div>
     </div>
 
-    <div class="main"></div>
+    <div class="main">
+
+        
+
+        <div id="line-6" class="line mt-5 mb-2 text-center">
+            <div class="container">
+
+                <h1>Pricing</h1>
+
+                <p class="line__description d-none d-md-flex">
+                    Most calendars are designed for teams.<br>Slate is designed for freelancers
+                </p>
+
+                <div class="row mt-5" id="pricings-row"></div>
+
+            </div>
+        </div>
+
+    </div>
 
     <div class="footer"></div>
 
@@ -70,7 +88,7 @@
         crossorigin="anonymous"></script>
     <!-- /jQuery, Popper.js, Bootstrap JS -->
 
-    <script src="resources/js/my-index.js"></script>
+    <script type="module" src="resources/js/my-index.js"></script>
 </body>
 
 </html>
