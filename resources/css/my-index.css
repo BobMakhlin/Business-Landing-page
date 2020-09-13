@@ -64,8 +64,42 @@
 
 /* /Pricings */
 
-.line-newsletter__highlighted {
-    font-weight: bold;
-    font-size: 1.05em;
+.partners-row__item {
+    min-height: 9em;
+    height: 100%;
+    background-color: white;    
+    border: 1px solid gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 0.5em;
 }
+
+
+
+/* Media queries */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .partners-row__item {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 0.5em;
+    }
+    .partners-row__item:nth-child(3) ~ .partners-row__item {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+@media only screen and (min-width: 1224px) {
+    
+}
+
+/* /Media queries */
+
 

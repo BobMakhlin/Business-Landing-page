@@ -8,8 +8,8 @@ const plans = [
             'Pricing Feature 1',
             'Pricing Feature 2',
             'Pricing Feature 3',
-            'Pricing Feature 5',
             'Pricing Feature 4',
+            'Pricing Feature 5',
         ]
     },
 
@@ -38,6 +38,7 @@ const plans = [
             'Pricing Feature 3',
             'Pricing Feature 4',
             'Pricing Feature 5',
+            'Pricing Feature 6',
         ]
     },
 ];
