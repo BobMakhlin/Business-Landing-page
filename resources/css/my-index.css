@@ -63,3 +63,9 @@
 }
 
 /* /Pricings */
+
+.line-newsletter__highlighted {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
