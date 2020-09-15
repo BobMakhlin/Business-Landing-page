@@ -121,6 +121,10 @@ form[name="sendMailForm"] textarea {
     height: 23em;
 }
 
+.contact-us-mobile {
+    display: none;    
+}
+
 .contact-us__map-block {
     padding-top: 1.5em;
     padding-bottom: 1.75em;
@@ -130,6 +134,7 @@ form[name="sendMailForm"] textarea {
     display: flex;
     justify-content: space-between;
     width: 9em;
+    margin: 0 auto;
 }
 
 .contact-us__social i {
@@ -159,6 +164,10 @@ form[name="sendMailForm"] textarea {
     .contact-us__map-block {
         display: none;
     }
+
+    .contact-us-mobile {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -168,12 +177,12 @@ form[name="sendMailForm"] textarea {
     .contact-us__send-mail {
         order: 2;
     }
-    .contact-us__social {
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
-@media only screen and (min-width: 1224px) {}
+@media only screen and (min-width: 1224px) {
+    .contact-us__social {
+        margin: 0;
+    }
+}
 
 /* /Media queries */
