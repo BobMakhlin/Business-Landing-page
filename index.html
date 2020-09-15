@@ -14,6 +14,17 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- /Bootstrap CSS -->
 
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <!-- /Leaflet CSS -->
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- /Font awesome -->
+
     <link rel="stylesheet" href="resources/css/default.css">
     <link rel="stylesheet" href="resources/css/my-index.css">
 
@@ -93,7 +104,7 @@
                                         <div class="form-group m-0">
                                             <label for="email-input" class="sr-only">Email</label>
                                             <input type="email" class="form-control round-control" id="email-input"
-                                                placeholder="Your Email" required>
+                                                placeholder="Your Email" name="email" required>
                                         </div>
                                     </div>
 
@@ -180,7 +191,7 @@
                 </div>
 
                 <button class="btn btn-primary round-control">More Testimonials</button>
-                
+
             </div>
         </div>
 
@@ -194,6 +205,79 @@
                 </h3>
 
                 <div class="row mt-5" id="pricings-row"></div>
+
+            </div>
+        </div>
+
+        <div id="contact-us" class="line">
+            <div class="container">
+
+                <div class="line__info text-center">
+                    <h2>Contact Us</h2>
+
+                    <h3 class="mb-5">
+                        Most calendars are designed for teams.<br>Slate is designed for freelancers
+                    </h3>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 offset-md-3 contact-us__send-mail">
+                        <form class="d-flex flex-column h-100" name="sendMailForm" action="">
+
+                            <div class="form-group mt-auto">
+                                <label for="send-mail__name-input" class="sr-only">Name</label>
+                                <input type="text" class="form-control round-control" id="send-mail__name-input"
+                                    placeholder="Your Name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="send-mail__email-input" class="sr-only">Email</label>
+                                <input type="email" class="form-control round-control" id="send-mail__email-input"
+                                    placeholder="Your Email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="send-mail__message-input" class="sr-only">Message</label>
+
+                                <textarea class="form-control" id="send-mail__message-input" placeholder="Your Message"
+                                    name="message" required></textarea>
+                            </div>
+
+                            <button class="btn btn-primary round-control" type="submit">Send</button>
+
+                        </form>
+                    </div>
+
+                    <div class="col-lg-7 offset-lg-1 col-md-12 contact-us__map-block">
+
+                        <div class="row text-center">
+                            <div class="col contact">
+                                <p class="fas fa-map-marker-alt contact__icon"></p>
+                                <h5 class="contact__text">6386 Spring St undefined Anchorage, Georgia 12473 United
+                                    States</h5>
+                            </div>
+
+                            <div class="col contact">
+                                <p class="fas fas fa-mobile-alt contact__icon"></p>
+                                <h5 class="contact__text">(843) 555-0130 </h5>
+                            </div>
+
+                            <div class="col contact">
+                                <p class="far fa-envelope contact__icon"></p>
+                                <h5 class="contact__text">willie.jennings@example.com</h5>
+                            </div>
+                        </div>
+
+                        <div id="map"></div>
+
+                        <div class="contact-us__social">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
         </div>
@@ -214,6 +298,12 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <!-- /jQuery, Popper.js, Bootstrap JS -->
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <!-- /Leaflet JS -->
 
     <script type="module" src="resources/js/my-index.js"></script>
 </body>

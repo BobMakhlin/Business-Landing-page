@@ -9,7 +9,6 @@
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
     padding: 2.2em;
-
     transition: background-color 1.2s;
 }
 
@@ -20,6 +19,7 @@
 .plan:hover {
     background-color: var(--blue);
 }
+
 .plan:hover, .plan:hover .plan__description, .plan:hover .price-block__period {
     color: white;
 }
@@ -67,17 +67,83 @@
 .partners-row__item {
     min-height: 9em;
     height: 100%;
-    background-color: white;    
+    background-color: white;
     border: 1px solid gray;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-bottom: 0.5em;
 }
 
+/* Send mail */
 
+#send-mail__message-input {
+    height: 12rem;
+    resize: none;
+}
+
+form[name="sendMailForm"] .form-group {
+    margin-bottom: 2em;
+}
+
+form[name="sendMailForm"] .form-control {
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+}
+
+form[name="sendMailForm"] textarea {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.contact-us__send-mail {
+    padding: 2.25em 2.5em;
+    background-color: white;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Send mail */
+
+/* Contact us */
+
+#map {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2.9em;
+    margin-bottom: 3.7em;
+
+    height: 23em;
+}
+
+.contact-us__map-block {
+    padding-top: 1.5em;
+    padding-bottom: 1.75em;
+}
+
+.contact-us__social {
+    display: flex;
+    justify-content: space-between;
+    width: 9em;
+}
+
+.contact-us__social i {
+    font-size: 1.9rem;
+    color: var(--blue);
+}
+
+
+.contact__icon {
+    font-size: 1.6rem;
+    color: var(--blue);
+}
+
+/* /Contact us */
 
 /* Media queries */
 
@@ -87,19 +153,27 @@
         margin: 0 auto;
         margin-bottom: 0.5em;
     }
-    .partners-row__item:nth-child(3) ~ .partners-row__item {
+    .partners-row__item:nth-child(3)~.partners-row__item {
+        display: none;
+    }
+    .contact-us__map-block {
         display: none;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact-us__map-block {
+        order: 1;
+    }
+    .contact-us__send-mail {
+        order: 2;
+    }
+    .contact-us__social {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-@media only screen and (min-width: 1224px) {
-    
-}
+@media only screen and (min-width: 1224px) {}
 
 /* /Media queries */
-
-

@@ -49,6 +49,7 @@ body {
     font-size: 0.9em;
     padding-top: 1.3em;
     padding-bottom: 1.3em;
+    font-family: 'Roboto', sans-serif;
 }
 .form-control, .form-control::placeholder {
     color: #18171D;
@@ -104,9 +105,6 @@ h5 {
     text-align: left;
     margin-left: 0.5em;
 }
-.user__profession {
-    /* margin-bottom: 0; */
-}
 
 /* /User */
 
@@ -118,13 +116,13 @@ h5 {
         font-size: 15px !important;
     }
 
-    .plan {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     .line__text-column {
         text-align: center;
+    }
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
     }
 }
 
